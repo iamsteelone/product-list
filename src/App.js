@@ -22,7 +22,13 @@ function SearchBar() {
   );
 }
 
-function ProductTable() {
+function ProductTable(produce) {
+  const produceRows = [];
+  const latestProductCategory = '';
+
+  const sortedProduce = produce.forEach((product) => {
+
+  })
   return (
     <>
       <table>
@@ -48,7 +54,7 @@ export default function ProductSearch() {
   return (
     <>
       <SearchBar />
-      <ProductTable>
+      <ProductTable produce={PRODUCE}>
 
       </ProductTable>
     </>
